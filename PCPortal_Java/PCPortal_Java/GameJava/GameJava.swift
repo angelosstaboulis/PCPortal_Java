@@ -32,9 +32,7 @@ struct GameJava: View {
                     Text(questions[self.counter].label).frame(width: 400, height: 45, alignment: .leading)
                 }.frame(width: 300, height: 50, alignment: .leading)
                 HStack(spacing:30){
-                    CheckBox(imageName: $imageName, title: $answer1, selected: $selected1, getSelected: $getSelected1).padding(.leading).foregroundColor(.red).frame(width: 400, height: 45, alignment: .leading).onTapGesture {
-                        debugPrint("clicked")
-                    }
+                    CheckBox(imageName: $imageName, title: $answer1, selected: $selected1, getSelected: $getSelected1).padding(.leading).foregroundColor(.red).frame(width: 400, height: 45, alignment: .leading)
                 }.frame(width: 300, height: 50, alignment: .leading).simultaneousGesture(
                     TapGesture()
                         .onEnded { _ in
