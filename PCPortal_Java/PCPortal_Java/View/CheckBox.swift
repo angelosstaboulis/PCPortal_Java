@@ -9,7 +9,7 @@ import SwiftUI
 struct CheckBox: View {
     @Binding var imageName:String
     @Binding var title:String
-    @Binding var selected:Bool
+    @Binding var selected:Bool 
     @Binding var getSelected:String
     var body: some View {
         HStack{
