@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftUIRadioButtons",
+        "repositoryURL": "https://github.com/imokhtar/SwiftUIRadioButtons.git",
+        "state": {
+          "branch": "main",
+          "revision": "87220851916a6e54d076b19ad6e22962a1224d99",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
