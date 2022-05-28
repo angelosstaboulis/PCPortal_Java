@@ -18,7 +18,11 @@ struct FindUs: View {
 
     var body: some View {
         Map(coordinateRegion: $region, annotationItems: points) { item in
-            MapMarker(coordinate: CLLocationCoordinate2D(latitude: 41.116581, longitude: 25.401810), tint: .green)
+            MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: 41.116581, longitude: 25.401810)) {
+                Text("PC-Portal-Java")
+                Image(systemName: "pin.circle.fill").foregroundColor(.red)
+            }
+          
         }.edgesIgnoringSafeArea(.all).frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 150, alignment: .leading)
     }
     

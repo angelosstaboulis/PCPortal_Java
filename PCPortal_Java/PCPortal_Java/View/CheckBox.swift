@@ -16,7 +16,7 @@ struct CheckBox: View {
             Button {
                 getSelected = title
                 imageName = "square"
-                selected.toggle()
+                selected = true
             } label: {
                 HStack{
                     Image(imageName).border(.white, width: 1).background(Rectangle().foregroundColor(selected ? .red : .orange))
